@@ -12,7 +12,7 @@ on:
       set_release:
         description: "Select OS Release."
         required: false
-        default: "jammy"
+        default: "bookworm"
         type: choice
         options:
           - jammy
@@ -22,7 +22,7 @@ on:
       armbian_board:
         description: "Select device board."
         required: false
-        default: "all"
+        default: "panther-x2"
         type: choice
         options:
           - all
@@ -156,11 +156,11 @@ on:
       armbian_kernel:
         description: "Select kernel version."
         required: false
-        default: "6.1.y_5.15.y"
+        default: "6.6.y"
         type: choice
         options:
           - 5.4.y
-          - 5.10.y
+          - 5.10.6.6.yy
           - 5.15.y
           - 6.1.y
           - 6.6.y
@@ -208,12 +208,12 @@ on:
       builder_name:
         description: "Set Armbian builder signature."
         required: false
-        default: "ophub"
+        default: "ewintec"
         type: choice
         options:
           - ophub
           - angel
-          - yourname
+          - ewintec
 
 env:
   TZ: America/New_York
