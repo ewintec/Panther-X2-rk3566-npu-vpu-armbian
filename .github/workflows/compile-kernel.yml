@@ -22,7 +22,7 @@ on:
       kernel_version:
         description: "Select kernel version"
         required: false
-        default: "5.15.1_6.1.1"
+        default: "6.1.y_6.6.y"
         type: choice
         options:
           - 5.4.y
@@ -68,11 +68,11 @@ on:
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false
-        default: "-ophub"
+        default: "-ewintec"
         type: choice
         options:
           - -ophub
-          - -yourname
+          - -ewintec
 
 env:
   TZ: America/New_York
